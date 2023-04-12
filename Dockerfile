@@ -1,1 +1,4 @@
-FROM alpine:3.13.5
+FROM ubuntu:latest
+RUN apt update && apt upgrade -y
+RUN apt install nodejs -y
+RUN node -v
